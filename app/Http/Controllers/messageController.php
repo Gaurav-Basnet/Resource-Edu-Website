@@ -25,7 +25,7 @@ class messageController extends Controller
            Message::create($request->all());
 
 
-                  Mail::to('anotheruser20655@gmail.com')->send(new ApplicationReceived($validated));
+                  Mail::to('resourceitahari@gmail.com')->send(new ApplicationReceived($validated));
 
     return back()->with('success', 'Message Sent');
     }

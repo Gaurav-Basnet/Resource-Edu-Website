@@ -17,7 +17,7 @@
         <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name*</label>
         <input type="text" id="name" name="name" required
         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
-        placeholder="John Doe">
+        placeholder="Your Name">
       </div>
 
       <!-- Email -->
@@ -107,7 +107,7 @@
       </div>
 
       <!-- Submit Button -->
-      <button type="submit" name="submit"
+      <button type="submit" name="submit" id="submitBtn"
         class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg">
         Book Appointment
         <svg class="w-4 h-4 inline ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

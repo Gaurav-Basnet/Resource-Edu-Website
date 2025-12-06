@@ -385,7 +385,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 998;
 }
 
 .round-loader {
@@ -514,9 +514,8 @@
     opacity: 0.1;
 }
 
-/* Custom CSS for Error Message Box  Open*/
 .error-message {
-    z-index: 100;
+    z-index: 999;
     position: fixed;
     bottom: 10px;
     right: 0;
@@ -526,7 +525,7 @@
     color: #6b21a8; /* Changed to deep purple text */
     border: 1px solid #d8b4fe; /* Changed to medium purple */
     border-radius: 5px;
-    animation: slideIn 0.5s ease-out;
+    animation: slideIn 1s ease-out;
     display: none;
     border-left: 8px solid #9333ea; /* Changed to vibrant purple */
 }

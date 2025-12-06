@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="assests\images\icon.jpg" >
   <title>Resource Edu | @yield('title', 'Resource Education')</title>
   <link rel="stylesheet" href="src/output.css">
 
@@ -34,28 +35,30 @@
 
 <body class="bg-white">
   @if(session('success'))
-<div id="errorBox" class="error-message">
-    {{ session('success') }}
-</div>
-@endif
-
-@if(session('error'))
     <div id="errorBox" class="error-message">
-        {{ session('error') }}
+    {{ session('success') }}
     </div>
-@endif
- <!-- code for loader -->
-<div class="round-loader-container" id="loader">
-  <div class="round-loader">
-    <!-- Outer animated rings -->
-    <div class="loader-ring"></div>
-    <div class="loader-ring"></div>
-    <div class="loader-ring"></div>
-    <!-- Inner static/pulsing circle -->
-    <div class="loader-inner-circle"></div>
+  @endif
+
+  @if(session('error'))
+    <div id="errorBox" class="error-message">
+    {{ session('error') }}
+    </div>
+  @endif
+
+
+  <!-- code for loader -->
+  <div class="round-loader-container" id="loader">
+    <div class="round-loader">
+      <!-- Outer animated rings -->
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <!-- Inner static/pulsing circle -->
+      <div class="loader-inner-circle"></div>
+    </div>
+    <div class="loader-text">Loading...</div>
   </div>
-  <div class="loader-text">Loading...</div>
-</div>
 
 
   <!-- contact bar -->
@@ -88,20 +91,20 @@
       <!-- Social Icons -->
       <div class="flex items-center gap-3">
 
-        <a href="" class="hover:text-gray-300">
+        <a href="https://www.facebook.com/resourceeducationhub" class="hover:text-gray-300">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
             <path
               d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.4 3.57 8.14 8.15 8.79v-6.2H8.1v-2.6h2.09V9.58c0-2.07 1.23-3.22 3.11-3.22.9 0 1.84.16 1.84.16v2.02h-1.04c-1.03 0-1.35.64-1.35 1.3v1.56h2.3l-.37 2.6h-1.93v6.2c4.58-.65 8.15-4.39 8.15-8.79 0-5.5-4.46-9.96-9.96-9.96z" />
           </svg>
         </a>
-        <a href="#" class="hover:text-gray-300">
+        <a href="tel:+9779852082384" class="hover:text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5">
             <path
               d="M16.003 2.001c-7.732 0-14 6.268-14 14 0 2.476.645 4.894 1.87 7.032L2 30l7.197-1.843a13.94 13.94 0 006.806 1.739h.001c7.732 0 14-6.268 14-14s-6.267-14-14-14zm.002 25.5a11.49 11.49 0 01-5.786-1.544l-.414-.24-4.27 1.092 1.14-4.163-.269-.428A11.47 11.47 0 014.5 16c0-6.341 5.16-11.5 11.503-11.5 6.34 0 11.5 5.159 11.5 11.5s-5.16 11.5-11.498 11.5zm6.26-8.698c-.342-.171-2.03-1-2.346-1.112-.314-.114-.543-.17-.773.17-.23.342-.886 1.113-1.085 1.342-.199.228-.398.256-.74.085-.343-.17-1.45-.534-2.761-1.701-1.02-.909-1.71-2.031-1.91-2.372-.199-.342-.021-.526.15-.697.154-.153.343-.399.514-.599.17-.2.228-.342.343-.57.114-.228.057-.427-.028-.599-.085-.171-.773-1.867-1.06-2.555-.28-.672-.563-.58-.773-.591-.2-.01-.427-.012-.656-.012s-.599.085-.914.427c-.314.342-1.2 1.17-1.2 2.844 0 1.673 1.229 3.291 1.4 3.52.171.228 2.42 3.694 5.867 5.179.82.354 1.462.566 1.96.726.823.262 1.57.225 2.16.137.659-.098 2.03-.83 2.317-1.63.286-.799.286-1.484.2-1.63-.085-.142-.313-.227-.656-.399z" />
           </svg>
 
         </a>
-        <a href="#" class="hover:text-gray-300">
+        <a href="https://www.tiktok.com/@resource.education" class="hover:text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
             <path
               d="M21,7V9a1,1,0,0,1-1,1,8,8,0,0,1-4-1.08V15.5A6.5,6.5,0,1,1,6.53,9.72a1,1,0,0,1,1.47.9v2.52a.92.92,0,0,1-.28.62,2.49,2.49,0,0,0,2,4.23A2.61,2.61,0,0,0,12,15.35V3a1,1,0,0,1,1-1h2.11a1,1,0,0,1,1,.83A4,4,0,0,0,20,6,1,1,0,0,1,21,7Z" />
@@ -141,7 +144,7 @@
 
           <a href="{{'services'}}"
             class="nav-link text-purple-700 font-medium hover:text-purple-900 px-3 py-2 relative group">
-            Service
+            Services
             <span
               class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-purple-700 group-hover:w-full transition-all duration-300"></span>
           </a>
@@ -175,23 +178,30 @@
                 Countries</a>
             </div>
           </div>
+             <a href="{{ 'gallery' }}"
+            class="nav-link text-purple-700 font-medium hover:text-purple-900 px-3 py-2 relative group">
+            Gallery
+            <span
+              class="nav-underline absolute bottom-0  left-0 w-0 h-0.5 bg-purple-700 group-hover:w-full transition-all duration-300"></span>
+          </a>
+              <a href="{{'blogs'}}"
+            class="nav-link text-purple-700 font-medium hover:text-purple-900 px-3 py-2 relative group">
+            Blogs
+            <span
+              class="nav-underline absolute bottom-0  left-0 w-0 h-0.5 bg-purple-700 group-hover:w-full transition-all duration-300"></span>
+          </a>
           <a href="{{ 'contact' }}"
             class="nav-link text-purple-700 font-medium hover:text-purple-900 px-3 py-2 relative group">
             Contact
             <span
               class="nav-underline absolute bottom-0  left-0 w-0 h-0.5 bg-purple-700 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="{{'blogs'}}"
-            class="nav-link text-purple-700 font-medium hover:text-purple-900 px-3 py-2 relative group">
-            Blog
-            <span
-              class="nav-underline absolute bottom-0  left-0 w-0 h-0.5 bg-purple-700 group-hover:w-full transition-all duration-300"></span>
-          </a>
+      
         </div>
 
         <!-- Login Button (Desktop) -->
         <div class="hidden md:block">
-          <a href="{{ 'login' }}">
+          <a href="/login">
             <button
               class="ml-4 border border-purple-700 text-purple-700 px-4 py-1.5 rounded-md hover:bg-purple-700 hover:text-white transition-colors duration-300">
               Login
@@ -231,7 +241,7 @@
         <div>
           <button id="mobile-dropdown-btn"
             class="w-full text-left px-3 py-2 text-base font-medium text-purple-700 hover:bg-purple-50 rounded-md flex justify-between items-center">
-            Study Abroad
+            <a href="{{ 'studyabroad' }}">Study Abroad</a>
             <svg id="dropdown-icon" class="ml-2 h-4 w-4 transform transition-transform duration-200"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd"
@@ -250,18 +260,21 @@
               class="block px-3 py-2 text-sm text-purple-700 hover:bg-purple-50 rounded-md">Japan</a>
           </div>
         </div>
+        <a href="{{'gallery'}}"
+          class="block px-3 py-2 text-base font-medium text-purple-700 hover:bg-purple-50 rounded-md">Gallery</a>
+            <a href="{{'blogs'}}"
+          class="block px-3 py-2 text-base font-medium text-purple-700 hover:bg-purple-50 rounded-md">Blogs</a>
         <a href="{{'contact'}}"
           class="block px-3 py-2 text-base font-medium text-purple-700 hover:bg-purple-50 rounded-md">Contact</a>
-        <a href="{{'blogs'}}"
-          class="block px-3 py-2 text-base font-medium text-purple-700 hover:bg-purple-50 rounded-md">Blogs</a>
+      
       </div>
       <div class="pt-2 pb-2 border-t border-gray-200">
-      <a href="{{'login'}}"> 
-      <button
-          class="w-full flex justify-center items-center px-4 py-2 border border-purple-700 text-sm font-medium rounded-md text-purple-700 bg-white hover:bg-purple-700 hover:text-white transition-colors duration-300">
-          Login
-        </button>
-</a> 
+        <a href="{{'login'}}">
+          <button
+            class="w-full flex justify-center items-center px-4 py-2 border border-purple-700 text-sm font-medium rounded-md text-purple-700 bg-white hover:bg-purple-700 hover:text-white transition-colors duration-300">
+            Login
+          </button>
+        </a>
       </div>
     </div>
   </nav>
@@ -299,12 +312,12 @@
                   clip-rule="evenodd" />
               </svg>
             </a>
-            <a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">
-              <span class="sr-only">Instagram</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd" />
+            <a href="https://www.tiktok.com/@resource.education" class="text-purple-200 hover:text-white transition-colors duration-300">
+              <span class="sr-only">Tiktok</span>
+              <svg fill="#ffff" viewBox="0 0 32 32" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z">
+                </path>
               </svg>
             </a>
             <a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">
@@ -329,14 +342,22 @@
         <div class="space-y-4">
           <h3 class="text-lg font-bold uppercase tracking-wider">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Home</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">About Us</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Services</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Study
+            <li><a href="{{ 'welcome' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Home</a></li>
+            <li><a href="{{ 'about' }}" class="text-purple-200 hover:text-white transition-colors duration-300">About
+                Us</a></li>
+            <li><a href="{{ 'services' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Services</a></li>
+            <li><a href="{{ 'studyabroad' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Study
                 Destinations</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Testimonials</a>
+            <li><a href="{{ '/' }}#testimonials"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Testimonials</a>
             </li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Contact</a></li>
+            <li><a href="{{ 'contact' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Contact</a></li>
+            <li><a href="{{ 'gallery' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Gallery</a></li>
           </ul>
         </div>
 
@@ -344,14 +365,20 @@
         <div class="space-y-4">
           <h3 class="text-lg font-bold uppercase tracking-wider">Study Destinations</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">United States</a>
+            <li><a href="{{ 'usa' }}" class="text-purple-200 hover:text-white transition-colors duration-300">United
+                States</a>
             </li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Canada</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">United Kingdom</a>
+            <li><a href="{{ 'canada' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Canada</a></li>
+            <li><a href="{{ 'uk' }}" class="text-purple-200 hover:text-white transition-colors duration-300">United
+                Kingdom</a>
             </li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Australia</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">Germany</a></li>
-            <li><a href="#" class="text-purple-200 hover:text-white transition-colors duration-300">New Zealand</a>
+            <li><a href="{{ 'australia' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Australia</a></li>
+            <li><a href="{{ 'south_korea' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">South Korea</a></li>
+            <li><a href="{{ 'japan' }}"
+                class="text-purple-200 hover:text-white transition-colors duration-300">Japan</a>
             </li>
           </ul>
         </div>
@@ -399,11 +426,14 @@
           &copy; 2024 Resource Education Hub. All rights reserved.
         </p>
         <div class="flex space-x-6">
-          <a href="#" class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Privacy
+          <a href="/privacypolicy"
+            class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Privacy
             Policy</a>
-          <a href="#" class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Terms of
+          <a href="/termofservices"
+            class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Terms of
             Service</a>
-          <a href="#" class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Sitemap</a>
+          <a href="{{'sitemap'}}"
+            class="text-purple-300 hover:text-white text-sm transition-colors duration-300">Sitemap</a>
         </div>
       </div>
     </div>
@@ -421,7 +451,7 @@
       class="flex flex-col my-3 p-1 absolute bottom-16 right-0 transition-all duration-300 transform opacity-0 pointer-events-none">
 
       <!-- Facebook -->
-      <a href="https://facebook.com" target="_blank"
+      <a href="https://www.facebook.com/resourceeducationhub" target="_blank"
         class="bg-white rounded-full w-10 h-10 my-2 flex items-center justify-center shadow-md hover:scale-110 transition-all">
         <svg fill="#1877F2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path
@@ -439,7 +469,7 @@
       </a>
 
       <!-- WhatsApp -->
-      <a href="https://wa.me/yourNumber" target="_blank"
+      <a href="https://wa.me/9852082384" target="_blank"
         class="bg-white rounded-full w-10 h-10 my-2 flex items-center justify-center shadow-md hover:scale-110 transition-all">
         <svg viewBox="0 0 48 48" width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
@@ -461,7 +491,7 @@
       </a>
 
       <!-- TikTok -->
-      <a href="https://tiktok.com" target="_blank"
+      <a href="https://www.tiktok.com/@resource.education" target="_blank"
         class="bg-white rounded-full w-10 h-10 my-2 flex items-center justify-center shadow-md hover:scale-110 transition-all">
         <svg fill="#000000" viewBox="0 0 32 32" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -479,7 +509,7 @@
 
 <script>
   // GSAP Animation Code
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     // Register ScrollTrigger plugin
     if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
       gsap.registerPlugin(ScrollTrigger);
@@ -517,31 +547,15 @@
       });
     }
 
-    // Button animation
-    if (document.getElementById('see-more-btn')) {
-      gsap.from("#see-more-btn", {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: "#see-more-btn",
-          start: "top 75%",
-          toggleActions: "play none none none"
-        }
-      });
-    }
+
   });
-</script>
-
-<script>
-      var errorBox = document.getElementById("errorBox");
-      errorBox.style.display = "block"; // Show the box
-      setTimeout(function() {
-        errorBox.style.display = "none"; // Hide the box after 3 seconds
-      }, 3000);
-
+  var errorBox = document.getElementById("errorBox");
+  errorBox.style.display = "block"; // Show the box
+  setTimeout(function () {
+    errorBox.style.display = "none"; // Hide the box after 3 seconds
+  }, 3000);
 
 </script>
+
 
 </html>

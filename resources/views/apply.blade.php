@@ -13,8 +13,8 @@
     
 
     <!-- Application Form -->
-    <div class="bg-white p-8 md:p-10 rounded-xl shadow-lg">
-      <form class="space-y-8" action="{{ route('application.store') }}" method="POST" id="applicationForm" >
+<div class="bg-white  p-0 md:p-8 lg:p-8  rounded-xl md:shadow-lg lg:shadow-lg ">
+ <form class="space-y-8" action="{{ route('application.store') }}" method="POST" id="applicationForm" >
   @csrf
         <!-- Personal Information Section -->
         <div class="space-y-6">
@@ -274,7 +274,7 @@
 
         <!-- Submit Button -->
         <div class="pt-4">
-          <button type="submit" name="submit"
+          <button type="submit" name="submit" id="submitBtn"
             class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:scale-[1.01]">
             Submit Application
             <svg class="w-4 h-4 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

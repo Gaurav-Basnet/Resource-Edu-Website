@@ -19,7 +19,7 @@ class ApplicationReceived extends Mailable
 
     public function build()
     {
-        return $this->subject('New Message Received From your website')
+        return $this->subject('Message from Resource Education website.')
                     ->view('application');
     }
 }

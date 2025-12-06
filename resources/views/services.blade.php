@@ -61,7 +61,7 @@
         <div class="p-8 flex flex-col md:flex-row items-center">
           <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
             <div class="bg-indigo-100 p-4 rounded-full">
-              <img src="assests/images/study-abroad.png" class="h-16 w-16" alt="Study Abroad">
+              <img src="https://cdn-icons-png.flaticon.com/512/18251/18251247.png" class="h-16 w-16" alt="Study Abroad">
             </div>
           </div>
           <div>
@@ -84,7 +84,7 @@
         <div class="p-8 flex flex-col md:flex-row items-center">
           <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
             <div class="bg-purple-100 p-4 rounded-full">
-              <img src="assests/images/testprepare.png" class="h-16 w-16" alt="Test Preparation">
+              <img src="https://www.pngplay.com/wp-content/uploads/6/Exam-Logo-PNG-Clipart-Background.png" class="h-16 w-16" alt="Test Preparation">
             </div>
           </div>
           <div>
@@ -107,7 +107,7 @@
         <div class="p-8 flex flex-col md:flex-row items-center">
           <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
             <div class="bg-blue-100 p-4 rounded-full">
-              <img src="assests/images/carrer.png" class="h-16 w-16" alt="Career Counselling">
+              <img src="https://www.isr-school.de/wp-content/uploads/2022/06/4.png" class="h-16 w-16" alt="Career Counselling">
             </div>
           </div>
           <div>
@@ -130,7 +130,7 @@
         <div class="p-8 flex flex-col md:flex-row items-center">
           <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
             <div class="bg-orange-100 p-4 rounded-full">
-              <img src="assests/images/docs.png" class="h-16 w-16" alt="Documentation Guidance">
+              <img src="https://cdn-icons-png.freepik.com/512/8702/8702076.png" class="h-16 w-16" alt="Documentation Guidance">
             </div>
           </div>
           <div>
@@ -149,11 +149,11 @@
       </div>
 
       <!-- Visa Assistance Card -->
-<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-green-600 group">
+    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-green-600 group">
   <div class="p-8 flex flex-col md:flex-row items-center">
     <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
       <div class="bg-green-100 p-4 rounded-full">
-        <img src="assests/images/visa.png" class="h-16 w-16" alt="Visa Assistance">
+        <img src="https://png.pngtree.com/png-clipart/20240222/original/pngtree-check-approved-stamp-on-white-for-design-green-photo-png-image_14384510.png" class="h-16 w-16" alt="Visa Assistance">
       </div>
     </div>
     <div>
@@ -176,7 +176,7 @@
   <div class="p-8 flex flex-col md:flex-row items-center">
     <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
       <div class="bg-pink-100 p-4 rounded-full">
-        <img src="assests/images/scholarship.png" class="h-16 w-16" alt="Scholarship Guidance">
+        <img src="https://cdn.aglty.io/emsb/prevention-promotion/img/site/scholarship-icon.png" class="h-16 w-16" alt="Scholarship Guidance">
       </div>
     </div>
     <div>
@@ -206,7 +206,7 @@
       <p class="mb-8">
         Connect with our advisors today and begin your study abroad journey with confidence.
       </p>
-      <a href="{{ 'login' }}" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-md shadow-lg hover:bg-gray-100 transition">
+      <a href="{{ 'apply' }}" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-md shadow-lg hover:bg-gray-100 transition">
         Get Started
       </a>
     </div>
@@ -241,7 +241,7 @@
       <!-- Facility 2 - Computer Lab -->
       <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
         <div class="overflow-hidden">
-          <img src="../assests/images/computer-lab.jpg" 
+          <img src="../assests/images/libro.jpg" 
                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                alt="Computer Lab">
         </div>
@@ -275,7 +275,7 @@
       <!-- Facility 4 - Mock Test Center -->
       <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
         <div class="overflow-hidden">
-          <img src="../assests/images/test-center.jpg" 
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJBV-yd2DKrju-MXBDCcEl99orKjneLkj2w&s" 
                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                alt="Test Center">
         </div>
@@ -292,7 +292,7 @@
       <!-- Facility 5 - Counseling Center -->
       <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
         <div class="overflow-hidden">
-          <img src="../assests/images/counseling.jpg" 
+          <img src="../assests/images/expert.png" 
                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                alt="Counseling">
         </div>
@@ -309,7 +309,7 @@
       <!-- Facility 6 - Language Lab -->
       <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
         <div class="overflow-hidden">
-          <img src="../assests/images/language-lab.jpg" 
+          <img src="../assests/images/lab.png" 
                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                alt="Language Lab">
         </div>

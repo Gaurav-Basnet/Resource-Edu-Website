@@ -2,12 +2,12 @@
 @section('title', 'Login')
 @section('content')
 
-<div class="gsap w-full lg:px-20 px-6 min-h-auto bg-gradient-to-br from-purple-50 to-indigo-50 flex items-center justify-center p-4">
+<div class="w-full lg:px-20 px-4 min-h-auto bg-gradient-to-br from-purple-50 to-indigo-50 flex items-center justify-center p-4">
   <div class="w-full max-w-xl">
     <!-- Logo/Brand -->
     <div class="text-center mb-2">
-      <h2 class="text-3xl font-bold text-purple-900">Resource Education Hub</h2>
-      <p class="text-gray-500 mt-2">Your gateway to global education</p>
+      <h2 class="text-2xl lg:text-3xl font-bold text-purple-900">Resource Education Hub</h2>
+      <p class="text-gray-500 mt-2 text-sm lg:text-base">Your gateway to global education</p>
     </div>
 
     @if ($errors->any())
@@ -23,44 +23,44 @@
     @endif
 
     <!-- Card Container -->
-    <div class="bg-white m-2 rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
+    <div class="bg-white m-0 lg:m-2 rounded-lg lg:rounded-2xl overflow-hidden">
       <!-- Tab Navigation -->
       <div class="flex border-b">
-        <button id="login-tab" class="flex-1 py-5 px-4 text-center font-semibold text-purple-600 border-b-2 border-purple-600 transition-colors duration-300">
+        <button id="login-tab" class="flex-1 py-4 lg:py-5 px-4 text-center font-semibold text-purple-600 border-b-2 border-purple-600 transition-colors duration-300 text-sm lg:text-base">
           Sign In
         </button>
-        <button id="register-tab" class="flex-1 py-5 px-4 text-center font-semibold text-gray-500 hover:text-purple-500 transition-colors duration-300">
+        <button id="register-tab" class="flex-1 py-4 lg:py-5 px-4 text-center font-semibold text-gray-500 hover:text-purple-500 transition-colors duration-300 text-sm lg:text-base">
           Register
         </button>
       </div>
 
       <!-- Login Form -->
-      <div id="login-form" class="p-8"  >
-        <form class="space-y-6" method="POST" action="/login">
+      <div id="login-form" class="p-4 lg:p-8">
+        <form class="space-y-4 lg:space-y-6" method="POST" action="/login">
           @csrf
           <div class="space-y-1">
             <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
               </div>
-              <input type="email" id="email" name="email" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="you@example.com" required value="{{ old('email') }}">
+              <input type="email" id="email" name="email" class="block w-full pl-10 pr-3 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="you@example.com" required value="{{ old('email') }}">
             </div>
-            <div id="email-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="email-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
           <div class="space-y-1">
             <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                 </svg>
               </div>
-              <input type="password" id="password" name="password" class="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="••••••••" required>
+              <input type="password" id="password" name="password" class="block w-full pl-10 pr-10 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="••••••••" required>
               <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center" id="toggle-password">
                 <svg id="eye-icon" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -71,76 +71,70 @@
                 </svg>
               </button>
             </div>
-            <div id="password-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="password-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
-          <div class="flex items-center justify-between">
-           
+          
 
-            <div class="text-sm">
-              <a href="#" class="font-medium text-purple-600 hover:text-purple-500 transition-colors duration-300">Forgot password?</a>
-            </div>
-          </div>
-
-          <button type="submit" name="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-300 transform hover:-translate-y-0.5">
+          <button type="submit" name="submit" class="w-full flex justify-center py-2 lg:py-3 px-4 border border-transparent rounded-lg text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 lg:transition-all lg:duration-300 lg:hover:-translate-y-0.5">
             Sign in
           </button>
         </form>
       </div>
 
       <!-- Register Form -->
-      <div id="register-form" class="hidden p-8">
-        <form method="POST" action="{{ route('register') }}" class="space-y-6">
+      <div id="register-form" class="hidden p-4 lg:p-8">
+        <form method="POST" action="{{ route('register') }}" class="space-y-4 lg:space-y-6">
           @csrf
           <div class="space-y-1">
             <label for="full-name" class="block text-sm font-medium text-gray-700">Full name</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
                 </svg>
               </div>
-              <input type="text" name="name" id="full-name" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="John Doe" required value="{{ old('name') }}">
+              <input type="text" name="name" id="full-name" class="block w-full pl-10 pr-3 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="John Doe" required value="{{ old('name') }}">
             </div>
-            <div id="name-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="name-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
           <div class="space-y-1">
             <label for="reg-email" class="block text-sm font-medium text-gray-700">Email address</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
               </div>
-              <input type="email" name="email" id="reg-email" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="you@example.com" required value="{{ old('email') }}">
+              <input type="email" name="email" id="reg-email" class="block w-full pl-10 pr-3 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="you@example.com" required value="{{ old('email') }}">
             </div>
-            <div id="reg-email-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="reg-email-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
           <div class="space-y-1">
             <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
               </div>
-              <input type="tel" name="phone" id="phone" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="+977xxxxxx" required value="{{ old('phone') }}">
+              <input type="tel" name="phone" id="phone" class="block w-full pl-10 pr-3 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="+977xxxxxx" required value="{{ old('phone') }}">
             </div>
-            <div id="phone-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="phone-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
           <div class="space-y-1">
             <label for="reg-password" class="block text-sm font-medium text-gray-700">Password</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                 </svg>
               </div>
-              <input type="password" name="password" id="reg-password" class="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="••••••••" required>
+              <input type="password" name="password" id="reg-password" class="block w-full pl-10 pr-10 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="••••••••" required>
               <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center" id="toggle-reg-password">
                 <svg id="reg-eye-icon" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -151,7 +145,7 @@
                 </svg>
               </button>
             </div>
-            <div id="reg-password-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="reg-password-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
             <div id="password-strength" class="mt-2 hidden">
               <div class="flex items-center space-x-2">
                 <div id="strength-meter" class="h-1.5 flex-1 bg-gray-200 rounded-full overflow-hidden">
@@ -173,13 +167,13 @@
 
           <div class="space-y-1">
             <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm password</label>
-            <div class="relative rounded-md shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-transparent">
+            <div class="relative rounded-md shadow-sm lg:transition-all lg:duration-300 lg:focus-within:ring-2 lg:focus-within:ring-purple-500 lg:focus-within:border-transparent">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                 </svg>
               </div>
-              <input type="password" name="password_confirmation" id="confirm-password" class="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 transition duration-300" placeholder="••••••••" required>
+              <input type="password" name="password_confirmation" id="confirm-password" class="block w-full pl-10 pr-10 py-2 lg:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500 lg:transition duration-300" placeholder="••••••••" required>
               <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center" id="toggle-confirm-password">
                 <svg id="confirm-eye-icon" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -190,25 +184,25 @@
                 </svg>
               </button>
             </div>
-            <div id="confirm-password-error" class="text-red-500 text-sm mt-1 hidden"></div>
+            <div id="confirm-password-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden"></div>
           </div>
 
           <div class="flex items-start">
             <div class="flex items-center h-5">
-              <input id="terms" name="terms" type="checkbox" class="focus:ring-purple-500 h-4 w-4 text-purple-600 border-gray-300 rounded transition duration-300" required>
+              <input id="terms" name="terms" type="checkbox" class="focus:ring-purple-500 h-4 w-4 text-purple-600 border-gray-300 rounded lg:transition duration-300" required>
             </div>
             <div class="ml-3 text-sm">
-              <label for="terms" class="font-medium text-gray-700">I agree to the <a href="#" class="text-purple-600 hover:text-purple-500 transition-colors duration-300">Terms</a> and <a href="#" class="text-purple-600 hover:text-purple-500 transition-colors duration-300">Privacy Policy</a></label>
+              <label for="terms" class="font-medium text-gray-700 text-xs lg:text-sm">I agree to the <a href="/termofservices" class="text-purple-600 hover:text-purple-500 transition-colors duration-300">Terms</a> and <a href="/privacypolicy" class="text-purple-600 hover:text-purple-500 transition-colors duration-300">Privacy Policy</a></label>
             </div>
           </div>
-          <div id="terms-error" class="text-red-500 text-sm mt-1 hidden">You must agree to the terms and conditions</div>
+          <div id="terms-error" class="text-red-500 text-xs lg:text-sm mt-1 hidden">You must agree to the terms and conditions</div>
 
-          <button type="submit" name="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-300 transform hover:-translate-y-0.5">
+          <button type="submit" name="submit" class="w-full flex justify-center py-2 lg:py-3 px-4 border border-transparent rounded-lg text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 lg:transition-all lg:duration-300 lg:hover:-translate-y-0.5">
             Create account
           </button>
         </form>
 
-        <div class="mt-6 text-center text-sm">
+        <div class="mt-4 lg:mt-6 text-center text-xs lg:text-sm">
           <p class="text-gray-600">Already have an account? <button id="show-login" class="font-medium text-purple-600 hover:text-purple-500 transition-colors duration-300">Sign in</button></p>
         </div>
       </div>
@@ -217,6 +211,7 @@
 </div>
 
 <script>
+// (Keep the same JavaScript as in your original code)
 document.addEventListener('DOMContentLoaded', function() {
   // Tab switching functionality
   const loginTab = document.getElementById('login-tab');

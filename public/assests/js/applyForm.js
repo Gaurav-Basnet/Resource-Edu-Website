@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('applicationForm');
     const inputs = form.querySelectorAll('input, select, textarea');
+        const submitBtn = document.getElementById("submitBtn");
     
     // Validation patterns
     const patterns = {
@@ -230,6 +231,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Validate all fields before submission
     function validateForm() {
+                submitBtn.disabled = true;
+        submitBtn.classList.add("opacity-75", "cursor-not-allowed");
+        submitBtn.innerHTML = "Sending...";
+
+        // Optionally re-enable after 3 seconds (3000 ms)
+        setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+            submitBtn.innerHTML = "Submit";
+        }, 30000);
+     
         let isValid = true;
         
         inputs.forEach(input => {

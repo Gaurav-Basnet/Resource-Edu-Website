@@ -89,7 +89,7 @@
       <!-- Uni 1 -->
       <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
         <div class="h-48 bg-purple-900 flex items-center justify-center">
-          <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/public/field/field_image_main/oxford_0.jpg" alt="University of Oxford" class="h-full w-full object-cover">
+          <img src="https://cdn.britannica.com/03/117103-050-F4C2FC83/view-University-of-Oxford-England-Oxfordshire.jpg" alt="University of Oxford" class="h-full w-full object-cover">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">University of Oxford</h3>
@@ -107,7 +107,7 @@
       <!-- Uni 2 -->
       <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
         <div class="h-48 bg-indigo-800 flex items-center justify-center">
-          <img src="https://www.cam.ac.uk/sites/www.cam.ac.uk/files/styles/content-885x432/public/news/research/news/queens-college-1600x900.jpg" alt="University of Cambridge" class="h-full w-full object-cover">
+          <img src="https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg" alt="University of Cambridge" class="h-full w-full object-cover">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">University of Cambridge</h3>
@@ -125,7 +125,7 @@
       <!-- Uni 3 -->
       <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
         <div class="h-48 bg-purple-900 flex items-center justify-center">
-          <img src="https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/newseventsimage_1578998865177_mainnews2012_x1.jpg" alt="Imperial College London" class="h-full w-full object-cover">
+          <img src="https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/newseventsimage_1694176603297_mainnews2012_x1.jpg  " alt="Imperial College London" class="h-full w-full object-cover">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Imperial College London</h3>
@@ -696,105 +696,12 @@
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="gsap py-16 bg-gray-50">
-  <div class="max-w-full px-6 lg:px-20">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
-      Student <span class="text-purple-600">Success Stories</span>
-    </h2>
-    <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-      Hear from students who made UK their education destination
-    </p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="bg-white p-8 rounded-xl shadow-md">
-        <div class="flex items-center mb-6">
-          <img class="w-12 h-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/42.jpg" alt="Priya">
-          <div class="ml-4">
-            <h4 class="font-bold">Priya M.</h4>
-            <p class="text-purple-600 text-sm">London School of Economics</p>
-          </div>
-        </div>
-        <p class="text-gray-600 italic mb-4">"The 1-year Master's program saved me time and money while providing world-class education. I secured a job in London before graduating!"</p>
-        <div class="flex text-yellow-400">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-        </div>
-      </div>
-      
-      <!-- Testimonial 2 -->
-      <div class="bg-white p-8 rounded-xl shadow-md">
-        <div class="flex items-center mb-6">
-          <img class="w-12 h-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/33.jpg" alt="Rahul">
-          <div class="ml-4">
-            <h4 class="font-bold">Rahul S.</h4>
-            <p class="text-purple-600 text-sm">University of Manchester</p>
-          </div>
-        </div>
-        <p class="text-gray-600 italic mb-4">"The industrial placements during my engineering degree gave me practical experience that helped me secure a graduate job immediately."</p>
-        <div class="flex text-yellow-400">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-          </svg>
-        </div>
-      </div>
-      
-      <!-- Testimonial 3 -->
-      <div class="bg-white p-8 rounded-xl shadow-md">
-        <div class="flex items-center mb-6">
-          <img class="w-12 h-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anjali">
-          <div class="ml-4">
-            <h4 class="font-bold">Anjali P.</h4>
-            <p class="text-purple-600 text-sm">University of Edinburgh</p>
-          </div>
-        </div>
-        <p class="text-gray-600 italic mb-4">"Scotland's 4-year undergraduate program gave me deeper knowledge and the graduate visa helped me start my career in the UK."</p>
-        <div class="flex text-yellow-400">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-          </svg>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="gsap relative text-white py-20 h-96 overflow-hidden">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="../assests/images/video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+  </section>
 
 @endsection

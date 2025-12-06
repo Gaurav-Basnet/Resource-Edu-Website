@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Auth;
 class loginController extends Controller
 {
     // Handle Login
+    public function showLoginForm()
+    {
+        return view('login');
+    }
     public function login(Request $request)
     {
         $request->validate([

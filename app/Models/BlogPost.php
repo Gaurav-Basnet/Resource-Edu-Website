@@ -9,16 +9,13 @@ class BlogPost extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'content',
-        'featured_image',
-        'author_name',
-        'publish_date',
-        'is_featured',
-        'is_popular',
-        'category'
-    ];
-
-    protected $dates = ['publish_date'];
+ protected $fillable = [
+    'title', 
+    'featured_image', 
+    'category', 
+    'content', 
+    'publish_date',
+    'is_popular',
+    'is_featured'
+];
 }

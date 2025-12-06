@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BlogPost;
 
@@ -9,8 +9,11 @@ class blogController extends Controller
 {
     public function index()
     {
-        // Fetch all blogs ordered by date (latest first)
-        $blogs = BlogPost::orderBy('created_at', 'desc')->get();
+        // Fetch featured blogs
+        $featuredBlogs = BlogPost::where('is_featured', 1)
+            ->orderBy('views', 'desc')
+            ->take(5)
+            ->get();
 
         // Fetch popular blogs
         $popularBlogs = BlogPost::where('is_popular', 1)
@@ -18,13 +21,15 @@ class blogController extends Controller
             ->take(5)
             ->get();
 
-        // Fetch featured blogs
-        $featuredBlogs = BlogPost::where('is_featured', 1)
-            ->orderBy('views', 'desc')
-            ->take(5)
+        // Collect IDs of featured and popular blogs
+        $excludedIds = $featuredBlogs->pluck('id')->merge($popularBlogs->pluck('id'))->unique();
+
+        // Fetch all blogs excluding featured and popular ones
+        $blogs = BlogPost::whereNotIn('id', $excludedIds)
+            ->orderBy('created_at', 'desc')
             ->get();
 
-        // Pass all to view
+        // Return view with all data
         return view('blogs', compact('blogs', 'popularBlogs', 'featuredBlogs'));
     }
 

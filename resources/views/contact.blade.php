@@ -178,143 +178,9 @@
     </form>
     </div>
   </section>
-
-  <!-- FAQ Section -->
-  <section class="gsap max-w-7xl mx-auto px-6 lg:px-20 py-16">
-    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
-
-    <div class="space-y-4 max-w-3xl mx-auto">
-    <!-- FAQ Item 1 -->
-    <div class="border border-gray-300 rounded-lg">
-      <button
-      class="w-full px-6 py-4 text-left text-lg font-medium text-gray-800 focus:outline-none flex justify-between items-center"
-      aria-expanded="false" onclick="toggleFAQ(this)">
-      What services do you offer for study abroad?
-      <svg class="w-5 h-5 text-purple-700 transition-transform duration-300" fill="none" stroke="currentColor"
-        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-      </button>
-      <div class="px-6 pb-4 hidden text-gray-700">
-      We provide test preparation, career counseling, documentation guidance, and more to support your study abroad
-      journey.
-      </div>
-    </div>
-
-    <!-- FAQ Item 2 -->
-    <div class="border border-gray-300 rounded-lg">
-      <button
-      class="w-full px-6 py-4 text-left text-lg font-medium text-gray-800 focus:outline-none flex justify-between items-center"
-      aria-expanded="false" onclick="toggleFAQ(this)">
-      How can I prepare for IELTS with your help?
-      <svg class="w-5 h-5 text-purple-700 transition-transform duration-300" fill="none" stroke="currentColor"
-        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-      </button>
-      <div class="px-6 pb-4 hidden text-gray-700">
-      We offer expert tips, mock exams, and customized coaching sessions tailored to improve your IELTS score.
-      </div>
-    </div>
-
-    <!-- FAQ Item 3 -->
-    <div class="border border-gray-300 rounded-lg">
-      <button
-      class="w-full px-6 py-4 text-left text-lg font-medium text-gray-800 focus:outline-none flex justify-between items-center"
-      aria-expanded="false" onclick="toggleFAQ(this)">
-      Do you help with documentation for visa applications?
-      <svg class="w-5 h-5 text-purple-700 transition-transform duration-300" fill="none" stroke="currentColor"
-        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 9l6 6 6-6" />
-      </svg>
-      </button>
-      <div class="px-6 pb-4 hidden text-gray-700">
-      Yes, our experts assist you in preparing and organizing all necessary documentation for your visa and
-      application process.
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- Success Stories / Testimonials Section -->
-  <section class="gsap px-6 lg:px-20 py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      Student <span class="text-purple-600">Success Stories</span>
-      </h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-      Hear from students who achieved their study abroad dreams with our guidance
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-      <div class="flex items-center mb-4">
-        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-        <span class="text-purple-600 font-bold">AS</span>
-        </div>
-        <div>
-        <h4 class="font-bold">Anjali Sharma</h4>
-        <p class="text-gray-600 text-sm">University of London</p>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">
-        "The team helped me navigate the complex UK visa process and secured me a scholarship I didn't even know I
-        qualified for!"
-      </p>
-      <div class="flex text-yellow-400">
-        ★ ★ ★ ★ ★
-      </div>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-      <div class="flex items-center mb-4">
-        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-        <span class="text-purple-600 font-bold">RS</span>
-        </div>
-        <div>
-        <h4 class="font-bold">Rohan Shrestha</h4>
-        <p class="text-gray-600 text-sm">University of Sydney</p>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">
-        "From IELTS preparation to accommodation arrangements, they supported me at every step of my Australia
-        journey."
-      </p>
-      <div class="flex text-yellow-400">
-        ★ ★ ★ ★ ★
-      </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-      <div class="flex items-center mb-4">
-        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-        <span class="text-purple-600 font-bold">PG</span>
-        </div>
-        <div>
-        <h4 class="font-bold">Priya Gurung</h4>
-        <p class="text-gray-600 text-sm">University of Toronto</p>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">
-        "I was confused about which Canadian college to choose, but their counselors matched me perfectly with my
-        dream program."
-      </p>
-      <div class="flex text-yellow-400">
-        ★ ★ ★ ★ ☆
-      </div>
-      </div>
-    </div>
-
-
-    </div>
-  </section>
   <!-- Contact Form Section -->
   <section class="gsap px-6 lg:px-20 py-16 bg-white">
-    <div class="max-w-4xl mx-auto">
+    <div id="contact" class="max-w-4xl mx-auto">
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
       Send Us a <span class="text-purple-600">Message</span>
@@ -328,8 +194,7 @@
 
 
 
-    <form action="{{ 'message' }}" method="POST" id="queryform" class="bg-gray-50 p-8 rounded-xl shadow-lg">
-      @csrf
+<form action="{{ 'message' }}" method="POST" id="queryform" class="lg:bg-gray-50 md:bg-gray-50 p-0 md:p-8 lg:p-8 rounded-xl lg:shadow-lg md:shadow-lg bg-white-50">      @csrf
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
       <div>
         <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
@@ -391,6 +256,76 @@
     </form>
     </div>
   </section>
+  <!-- Voice of Success - Carousel Version -->
+  <section id="testimonials"
+    class="gsap px-6 lg:px-20 py-16 bg-gradient-to-r from-purple-900 via-purple-800 to-indigo-900 overflow-hidden">
+
+    <div class="mb-12 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Voices of Success</h1>
+    <p class="text-white max-w-2xl mx-auto opacity-90">Hear what our students say about their experience</p>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto">
+    <!-- Carousel Track -->
+    <div class="testimonial-carousel flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-8 -mx-4 px-4"
+      style="scrollbar-width: none;">
+      <style>
+      .testimonial-carousel::-webkit-scrollbar {
+        display: none;
+      }
+      </style>
+
+      @foreach($testimonials as $testimonial)
+      <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+      <div
+      class="bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 h-full transform transition-all hover:scale-[1.02] duration-300">
+      <div class="flex items-center mb-6">
+      <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-purple-300">
+        <img class="w-full h-full object-cover"
+        src="{{ $testimonial->image ? asset('storage/' . $testimonial->image) : 'https://via.placeholder.com/150' }}"
+        alt="{{ $testimonial->name }}">
+      </div>
+      <div class="ml-4">
+        <h3 class="font-bold text-white">{{ $testimonial->name }}</h3>
+        <p class="text-purple-200 text-sm">{{ $testimonial->title }}</p>
+      </div>
+      </div>
+      <p class="text-white/90 mb-6 italic">{{ $testimonial->message }}</p>
+      <div class="flex text-yellow-300">
+      ★ ★ ★ ★ ★
+      </div>
+      </div>
+      </div>
+    @endforeach
+
+      <!-- Navigation Arrows -->
+      <button
+      class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all duration-300 hidden md:block">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      </button>
+      <button
+      class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all duration-300 hidden md:block">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </button>
+    </div>
+
+    <!-- Dots Indicator -->
+    <div class="flex justify-center mt-8 space-x-2">
+      <button class="w-3 h-3 rounded-full bg-white/30 dot-indicator active:bg-white"></button>
+      <button class="w-3 h-3 rounded-full bg-white/30 dot-indicator"></button>
+      <button class="w-3 h-3 rounded-full bg-white/30 dot-indicator"></button>
+      <button class="w-3 h-3 rounded-full bg-white/30 dot-indicator"></button>
+    </div>
+  </section>
+
+
+
 
   <!-- Map Section -->
   <section class="px-6 lg:px-0 py-0 bg-gray-100">
